@@ -1,4 +1,5 @@
 import { Module } from '@nestjs/common';
+<<<<<<< HEAD
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './users/users.module';
 import { OffersModule } from './offers/offers.module';
@@ -36,5 +37,13 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
     WishlistsModule,
     AuthModule,
   ],
+=======
+import { AppController } from './app.controller';
+
+@Module({
+  imports: [],
+  controllers: [AppController],
+  providers: [],
+>>>>>>> origin/main
 })
 export class AppModule {}
