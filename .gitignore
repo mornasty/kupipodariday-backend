@@ -32,7 +32,6 @@ lerna-debug.log*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
-<<<<<<< HEAD
 !.vscode/extensions.json
 
 .env
@@ -40,6 +39,3 @@ lerna-debug.log*
 .env.development.local
 .env.test.local
 .env.production.local
-=======
-!.vscode/extensions.json
->>>>>>> origin/main
