@@ -1,3 +1,4 @@
+import { Exclude } from 'class-transformer';
 import { IsDate, IsEmail, IsUrl, Length } from 'class-validator';
 import { Offer } from 'src/offers/entities/offer.entities';
 import { Wish } from 'src/wishes/entities/wish.entities';
@@ -52,7 +53,8 @@ export class User {
   @IsEmail()
   email: string;
 
-  @Column()
+  @Column({ select: false })
+  @Exclude() 
   password: string;
 
   @OneToMany(() => Offer, (offer) => offer.user)

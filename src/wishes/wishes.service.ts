@@ -123,7 +123,7 @@ export class WishesService {
 
     wish.copied += 1;
     await this.wishRepository.save(wish);
-    await this.wishRepository.save(newWish);
+    await this.wishRepository.insert(newWish);
 
     return newWish;
   }
